@@ -5,7 +5,8 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 
 | Item  | Description |
 | ------------- | ------------- |
-| **Variables**  ||
+
+## Variables
 | host_vars  | directory for host variable files  |
 | group_vars | directory for group variable files |
 | facts | collecting the host specific data |
@@ -14,28 +15,29 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `vars_files` | in playbook |
 | `include_vars` | module |
 | `include_tasks: stuff.yml` | include a sub task file |
-| Task Control & Loops | |
+
+## Task Control & Loops
 | `with_items` | then “item” inside action |
-with_nested - for nested loops
-with_file 
-with_fileglob 
-with_sequence
-with_random_choice
-when - meet a condition
+| `with_nested` | for nested loops
+| `with_file` | |
+| `with_fileglob` | |  
+| `with_sequence` | |
+| `with_random_choice` | |
+| `when` | meet a condition |
 
 
-Modules
-copy #copy file or content
-get_url #download file
-file #manage file/directories
-yum #manage package
-service #manage services
-firewalld #firewall service
-lineinfile #add a line to dest file
-template #to template file with variables
-debug - to debug and display
-add_host - add host to inventory while play
-wait_for - use for flow control 
+## Modules
+| `copy`  | copy file or content |
+| `get_url`  | download file |
+| `file`  | manage file/directories |
+| `yum`  | manage package |
+| `service`  | manage services |
+| `firewalld`  | firewall service |
+| `lineinfile`  | add a line to dest file |
+| `template`  | to template file with variables |
+| `debug` | to debug and display |
+| `add_host` | add host to inventory while play |
+| `wait_for` | use for flow control  |
 
 Playbooks
 ansible-playbook <YAML>  # Run on all hosts defined
