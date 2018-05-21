@@ -91,7 +91,9 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 ## Roles
 main file in sub-directories should be main.yml
 Role variable can define under **roles** directive
+
 **Role Directories**
+
 | Item  | Description |
 | ------------- | ------------- |
 | defaults | default value of role variables |
