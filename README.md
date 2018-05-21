@@ -3,17 +3,14 @@ Ansible Cheat Sheet for Quick Reference and understading
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
 
-| First Header  | Second Header |
+| Item  | Description |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| ## Variables  |   |
+| host_vars  | directory for host variable files  |
+| group_vars | directory for group variable files |
+| facts | collecting the host specific data |
 
-| Item | Description |
-----------------------
-| ## Variables | |
-|host_vars |directory for host variable files |
-|group_vars |directory for group variable files |
-|facts |collecting the host specific data |
+
 
 ## Variables
 host_vars directory
