@@ -7,6 +7,8 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | ------------- | ------------- |
 
 ## Variables
+| Item  | Description |
+| ------------- | ------------- |
 | host_vars  | directory for host variable files  |
 | group_vars | directory for group variable files |
 | facts | collecting the host specific data |
