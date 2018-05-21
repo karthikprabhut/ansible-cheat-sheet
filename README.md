@@ -19,6 +19,8 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `include_tasks: stuff.yml` | include a sub task file |
 
 ## Task Control & Loops
+| Item  | Description |
+| ------------- | ------------- |
 | `with_items` | then “item” inside action |
 | `with_nested` | for nested loops
 | `with_file` | |
@@ -29,6 +31,8 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 
 
 ## Modules
+| Item  | Description |
+| ------------- | ------------- |
 | `copy`  | copy file or content |
 | `get_url`  | download file |
 | `file`  | manage file/directories |
@@ -41,13 +45,15 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `add_host` | add host to inventory while play |
 | `wait_for` | use for flow control  |
 
-Playbooks
-ansible-playbook <YAML>  # Run on all hosts defined
-ansible-playbook <YAML> -f 10   # Run 10 hosts parallel
-ansible-playbook <YAML> --verbose # Verbose on successful tasks
-ansible-playbook <YAML> -C # Test run
-ansible-playbook <YAML> -C -D # Dry run
-ansible-playbook <YAML> -l <host> # Run on single host
+## Playbooks
+| Item  | Description |
+| ------------- | ------------- |
+| `ansible-playbook <YAML>` | Run on all hosts defined |
+| `ansible-playbook <YAML> -f 10` | Run 10 hosts parallel |
+| `ansible-playbook <YAML> --verbose` | Verbose on successful tasks |
+| `ansible-playbook <YAML> -C` | Test run |
+| `ansible-playbook <YAML> -C -D` | Dry run |
+| `ansible-playbook <YAML> -l <host>` | Run on single host |
 
 
 Handlers
