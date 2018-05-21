@@ -3,7 +3,7 @@ Ansible Cheat Sheet for Quick Reference and understading
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
 
-## Variables
+Variables
 host_vars directory
 group_vars directory
 facts
@@ -14,7 +14,7 @@ include_vars module
 include_tasks: stuff.yml # include a sub task file
 
 
-## Task Control & Loops
+Task Control & Loops
 with_items  - then “item” inside action
 with_nested - for nested loops
 with_file 
@@ -24,7 +24,7 @@ with_random_choice
 when - meet a condition
 
 
-## Modules
+Modules
 copy #copy file or content
 get_url #download file
 file #manage file/directories
@@ -37,7 +37,7 @@ debug - to debug and display
 add_host - add host to inventory while play
 wait_for - use for flow control 
 
-## Playbooks
+Playbooks
 ansible-playbook <YAML>  # Run on all hosts defined
 ansible-playbook <YAML> -f 10   # Run 10 hosts parallel
 ansible-playbook <YAML> --verbose # Verbose on successful tasks
@@ -46,12 +46,12 @@ ansible-playbook <YAML> -C -D # Dry run
 ansible-playbook <YAML> -l <host> # Run on single host
 
 
-## Handlers
+Handlers
 notify - to notify the handler
 handlers - define handler
 
 
-## Tags
+Tags
 tags - add tags to the tasks
 --tags ‘<tag>’ during playbook execution
 --skip-tags for skipping those tags
@@ -60,7 +60,7 @@ untagged - any untagged items
 all - all items
 
 
-## Handling Errors
+Handling Errors
 ignore_errors - proceed or not if any error on current task
 force_handlers - call handler even the play failed
 failed_when - mark the task as failed if a condition met
@@ -70,11 +70,11 @@ rescue - to run if block clause fails
 always - always run even block success or fails
 
 
-## Jinja2 Templates
+Jinja2 Templates
 <To be added>
 
 
-## Roles
+Roles
 main file in sub-directories should be main.yml
 Role Directories
 defaults - default value of role variables
@@ -91,7 +91,7 @@ Role variable can define under roles directive
 pre_tasks - tasks before role
 post_tasks - tasks after role
 
-## Ansible Galaxy
+Ansible Galaxy
 https://galaxy.ansible.com
 ansible-galaxy search ‘install git’ --platform el
 ansible-galaxy info <role-name>
@@ -106,7 +106,7 @@ delegate_to: localhost #run the task on localhost instead of inventory item.
 delegate_facts - assign the gathered facts from the tasks to the delegated host instead of current host
 
 
-## Parallelism
+Parallelism
 forks - number of forks or parallel machines
 --forks - when using ansible-playbook
 serial - control number parallel machines
@@ -116,7 +116,7 @@ wait_for - module to wait and check  if specific condition met.
 async_status - module to check an async task status
 
 
-## Ansible Vault
+Ansible Vault
 ansible-vault create newfile
 ansible-vault view newfile
 ansible-vault edit newfile
@@ -128,7 +128,7 @@ Or
 --vault-password-file <secret-password-file>
 
 
-## Troubleshooting
+Troubleshooting
 log_path 
 debug - module
 --syntax-check
