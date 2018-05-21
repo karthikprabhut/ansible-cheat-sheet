@@ -111,6 +111,7 @@ Role variable can define under **roles** directive
 
 ## Ansible Galaxy
 https://galaxy.ansible.com
+
 | Item  | Description |
 | ------------- | ------------- |
 | `ansible-galaxy search ‘install git’ --platform el` | search for a role |
