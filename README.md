@@ -6,25 +6,16 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | Item  | Description |
 | ------------- | ------------- |
 | **Variables**  ||
-| **host_vars**  | directory for host variable files  |
-| **group_vars** | directory for group variable files |
-| **facts** | collecting the host specific data |
-
-
-
-## Variables
-host_vars directory
-group_vars directory
-facts
-register - registered variables
-vars - in playbook
-vars_files - in playbook
-include_vars module
-include_tasks: stuff.yml # include a sub task file
-
-
-Task Control & Loops
-with_items  - then “item” inside action
+| host_vars  | directory for host variable files  |
+| group_vars | directory for group variable files |
+| facts | collecting the host specific data |
+| `register` | registered variables |
+| `vars` | in playbook |
+| `vars_files` | in playbook |
+| `include_vars` | module |
+| `include_tasks: stuff.yml` | include a sub task file |
+| Task Control & Loops | |
+| `with_items` | then “item” inside action |
 with_nested - for nested loops
 with_file 
 with_fileglob 
