@@ -56,45 +56,55 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `ansible-playbook <YAML> -l <host>` | Run on single host |
 
 
-Handlers
-notify - to notify the handler
-handlers - define handler
+## Handlers
+| Item  | Description |
+| ------------- | ------------- |
+| 'notify` | to notify the handler |
+| 'handlers` | define handler |
 
 
-Tags
-tags - add tags to the tasks
---tags ‘<tag>’ during playbook execution
---skip-tags for skipping those tags
-tagged - run any tagged tasks
-untagged - any untagged items
-all - all items
+## Tags
+| Item  | Description |
+| ------------- | ------------- |
+| `tags` | add tags to the tasks |
+| `--tags ‘<tag>’` | during playbook execution |
+| `--skip-tags` | for skipping those tags |
+| `tagged` | run any tagged tasks |
+| `untagged` |any untagged items |
+| `all` | all items |
 
 
-Handling Errors
-ignore_errors - proceed or not if any error on current task
-force_handlers - call handler even the play failed
-failed_when - mark the task as failed if a condition met
-changed_when - set  “ok” or “failed” for a task
-block - logical grouping of tasks (can use with when)
-rescue - to run if block clause fails
-always - always run even block success or fails
+## Handling Errors
+| Item  | Description |
+| ------------- | ------------- |
+| `ignore_errors` | proceed or not if any error on current task |
+| `force_handlers` | call handler even the play failed |
+| `failed_when` | mark the task as failed if a condition met |
+| `changed_when` | set  “ok” or “failed” for a task |
+| `block` | logical grouping of tasks (can use with when) |
+| `rescue` | to run if block clause fails |
+| `always` | always run even block success or fails |
 
 
 Jinja2 Templates
 <To be added>
 
 
-Roles
+## Roles
 main file in sub-directories should be main.yml
-Role Directories
-defaults - default value of role variables
-files - static files referenced by role tasks
-handlers - role’s handlers
-meta - role info like Author, Licence, Platform etc
-tasks - role’s task defenition
-templates - jinja2 templates
-tests - test inventory and test.yml
-vars - role’s variable values
+**Role Directories**
+| Item  | Description |
+| ------------- | ------------- |
+| defaults | default value of role variables |
+| files | static files referenced by role tasks |
+| handlers | role’s handlers |
+| meta | role info like Author, Licence, Platform etc |
+| tasks | role’s task defenition |
+| templates | jinja2 templates |
+| tests | test inventory and test.yml |
+| vars | role’s variable values |
+| pre_tasks | tasks before role |
+| post_tasks | tasks after role |
 
 Role variable can define under roles directive
 
