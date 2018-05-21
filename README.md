@@ -85,13 +85,12 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `rescue` | to run if block clause fails |
 | `always` | always run even block success or fails |
 
-
-Jinja2 Templates
-<To be added>
-
+## Jinja2 Templates
+<To be added with examples>
 
 ## Roles
 main file in sub-directories should be main.yml
+Role variable can define under **roles** directive
 **Role Directories**
 | Item  | Description |
 | ------------- | ------------- |
@@ -105,35 +104,36 @@ main file in sub-directories should be main.yml
 | vars | role’s variable values |
 | pre_tasks | tasks before role |
 | post_tasks | tasks after role |
+| pre_tasks | tasks before role |
+| post_tasks | tasks after role |
 
-Role variable can define under roles directive
-
-pre_tasks - tasks before role
-post_tasks - tasks after role
-
-Ansible Galaxy
+## Ansible Galaxy
 https://galaxy.ansible.com
-ansible-galaxy search ‘install git’ --platform el
-ansible-galaxy info <role-name>
-ansible-galaxy install <role-name> -p <directory>
-ansible-galaxy list  - to list local roles
-ansible-galaxy remove <role-name> - remove role
-ansible-galaxy init --offline <role-name>  - initiate a role directory
+| Item  | Description |
+| ------------- | ------------- |
+| `ansible-galaxy search ‘install git’ --platform el` | search for a role |
+| `ansible-galaxy info <role-name>` | display role information |
+| `ansible-galaxy install <role-name> -p <directory>` | install role from galaxy |
+| `ansible-galaxy list` | to list local roles |
+| `ansible-galaxy remove <role-name>` | remove role |
+| `ansible-galaxy init --offline <role-name>` | initiate a role directory |
 
+## Delegation
+| Item  | Description |
+| ------------- | ------------- |
+| `delegate_to: localhost` | run the task on localhost instead of inventory item |
+| `delegate_facts` | assign the gathered facts from the tasks to the delegated host instead of current host |
 
-Delegation
-delegate_to: localhost #run the task on localhost instead of inventory item.
-delegate_facts - assign the gathered facts from the tasks to the delegated host instead of current host
-
-
-Parallelism
-forks - number of forks or parallel machines
---forks - when using ansible-playbook
-serial - control number parallel machines
-async: 3600 # wait 3600 seconds to complete the task
-poll: 10 # check every 10 seconds if task completed
-wait_for - module to wait and check  if specific condition met.
-async_status - module to check an async task status
+## Parallelism
+| Item  | Description |
+| ------------- | ------------- |
+| 'forks' | number of forks or parallel machines|
+| `--forks` | when using ansible-playbook |
+| `serial` | control number parallel machines |
+| `async: 3600` | wait 3600 seconds to complete the task |
+| `poll: 10` | check every 10 seconds if task completed |
+| `wait_for` |module to wait and check  if specific condition met |
+| `async_status` | module to check an async task status |
 
 
 Ansible Vault
