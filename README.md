@@ -3,7 +3,7 @@ Ansible Cheat Sheet for Quick Reference and understading
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
 
-Variables
+## Variables
 host_vars directory
 group_vars directory
 facts
