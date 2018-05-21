@@ -3,6 +3,13 @@ Ansible Cheat Sheet for Quick Reference and understading
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
 
+| Item | Description |
+----------------------
+| ## Variables | |
+|host_vars |directory for host variable files |
+|group_vars |directory for group variable files |
+|facts |collecting the host specific data |
+
 ## Variables
 host_vars directory
 group_vars directory
