@@ -1,5 +1,5 @@
 # Ansible Cheat Sheet
-Ansible Cheat Sheet for Quick Reference and understading
+Ansible Cheat Sheet for Quick Reference and understanding
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
 
@@ -86,7 +86,7 @@ http://bit.ly/gineesh  |  www.techbeats.guru
 | `always` | always run even block success or fails |
 
 ## Jinja2 Templates
-<To be added with examples>
+*To be added later with examples*
 
 ## Roles
 main file in sub-directories should be main.yml
@@ -139,16 +139,16 @@ https://galaxy.ansible.com
 | `async_status` | module to check an async task status |
 
 
-Ansible Vault
-ansible-vault create newfile
-ansible-vault view newfile
-ansible-vault edit newfile
-ansible-vault view --vault-password-file .secret newfile
-ansible-vault decrypt newfile
-ansible-vault rekey newfile
---ask-vault-pass - ask for vault password for ansible-playbook
-Or
---vault-password-file <secret-password-file>
+## Ansible Vault
+| Item  | Description |
+| ------------- | ------------- |
+| `ansible-vault create newfile` | create a new vault file |
+| `ansible-vault view newfile` | view file which is already ansible vaulted |
+| `ansible-vault edit newfile` | Edit file |
+| `ansible-vault view --vault-password-file .secret newfile` | Provide vault password as file |
+| `ansible-vault decrypt newfile` | Remove encryption or vault |
+| `ansible-vault rekey newfile` | change vault password |
+| `--ask-vault-pass` or <br /> `--vault-password-file <secret-password-file>` | ask for vault password for ansible-playbook
 
 
 Troubleshooting
