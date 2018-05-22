@@ -151,16 +151,22 @@ https://galaxy.ansible.com
 | `--ask-vault-pass` or <br /> `--vault-password-file <secret-password-file>` | ask for vault password for ansible-playbook
 
 
-Troubleshooting
-log_path 
-debug - module
---syntax-check
---step
---start-at-task
---check
---diff
+## Troubleshooting
+| Item  | Description |
+| ------------- | ------------- |
+| log_path | where logs are saved |
+| `debug` | module for debugging |
+| `--syntax-check` | syntax checking for playbooks before they run |
+| `--step` | run playbook step by step |
+| `--start-at-task`| run a playbook but start at specific task |
+| `--check` | check mode |
+| `--diff` | will show the expected changes if you run the playbook, but will not do any changes (kind of dry run) |
+| `uri` | module for testing url |
+| `script` | module for running script and return success code |
+| `stat` | module to check the status of files/dir | 
+| `assert` | check file exist |
 
-uri - module for testing url
-script - module for running script and return success code
-stat - module to check the status of files/dir
-assert - check file exist
+
+*if you find any mistakes, please feel free to update or let me know*
+Thanks
+http://bit.ly/gineesh  |  www.techbeats.guru
