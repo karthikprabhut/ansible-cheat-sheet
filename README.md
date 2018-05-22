@@ -1,4 +1,6 @@
 # Ansible Cheat Sheet
+[Ansible](https://www.ansible.com/) is an open-source IT automation engine which can help you to automate most of your repetitive tasks in your work life. Ansible can also improve the consistency, scalability, reliability and easiness of your IT environment. 
+
 Ansible Cheat Sheet for Quick Reference and understanding
 
 http://bit.ly/gineesh  |  www.techbeats.guru 
