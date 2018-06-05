@@ -3,7 +3,7 @@
 
 Ansible Cheat Sheet for Quick Reference and understanding
 
-http://bit.ly/gineesh  |  www.techbeats.guru 
+http://bit.ly/gineesh  |  www.techbeatly.com 
 
 | Item  | Description |
 | ------------- | ------------- |
