@@ -168,7 +168,6 @@ https://galaxy.ansible.com
 | `stat` | module to check the status of files/dir | 
 | `assert` | check file exist |
 
-
 *if you find any mistakes, please feel free to update or let me know*
 
 Thanks
