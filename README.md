@@ -5,10 +5,8 @@ Ansible Cheat Sheet for Quick Reference and understanding
 
 http://bit.ly/gineesh  |  www.techbeatly.com 
 
-| Item  | Description |
-| ------------- | ------------- |
-
 ## Variables
+
 | Item  | Description |
 | ------------- | ------------- |
 | host_vars  | directory for host variable files  |
@@ -21,6 +19,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 | `include_tasks: stuff.yml` | include a sub task file |
 
 ## Task Control & Loops
+
 | Item  | Description |
 | ------------- | ------------- |
 | `with_items` | then “item” inside action |
@@ -33,6 +32,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 
 
 ## Modules
+
 | Item  | Description |
 | ------------- | ------------- |
 | `copy`  | copy file or content |
@@ -48,6 +48,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 | `wait_for` | use for flow control  |
 
 ## Playbooks
+
 | Item  | Description |
 | ------------- | ------------- |
 | `ansible-playbook <YAML>` | Run on all hosts defined |
@@ -59,6 +60,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 
 
 ## Handlers
+
 | Item  | Description |
 | ------------- | ------------- |
 | 'notify` | to notify the handler |
@@ -66,6 +68,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 
 
 ## Tags
+
 | Item  | Description |
 | ------------- | ------------- |
 | `tags` | add tags to the tasks |
@@ -77,6 +80,7 @@ http://bit.ly/gineesh  |  www.techbeatly.com
 
 
 ## Handling Errors
+
 | Item  | Description |
 | ------------- | ------------- |
 | `ignore_errors` | proceed or not if any error on current task |
@@ -124,12 +128,14 @@ https://galaxy.ansible.com
 | `ansible-galaxy init --offline <role-name>` | initiate a role directory |
 
 ## Delegation
+
 | Item  | Description |
 | ------------- | ------------- |
 | `delegate_to: localhost` | run the task on localhost instead of inventory item |
 | `delegate_facts` | assign the gathered facts from the tasks to the delegated host instead of current host |
 
 ## Parallelism
+
 | Item  | Description |
 | ------------- | ------------- |
 | 'forks' | number of forks or parallel machines|
@@ -142,6 +148,7 @@ https://galaxy.ansible.com
 
 
 ## Ansible Vault
+
 | Item  | Description |
 | ------------- | ------------- |
 | `ansible-vault create newfile` | create a new vault file |
@@ -154,6 +161,7 @@ https://galaxy.ansible.com
 
 
 ## Troubleshooting
+
 | Item  | Description |
 | ------------- | ------------- |
 | log_path | where logs are saved |
