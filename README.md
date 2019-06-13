@@ -3,7 +3,7 @@
 
 Ansible Cheat Sheet for Quick Reference and understanding
 
-[LinkedIn](http://bit.ly/gineesh)  |  [techbeatly.com](www.techbeatly.com} 
+[LinkedIn](http://bit.ly/gineesh)  |  [techbeatly.com](www.techbeatly.com)
 
 ## Variables
 
