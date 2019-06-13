@@ -52,7 +52,7 @@ Ansible Cheat Sheet for Quick Reference and understanding
 | Item  | Description |
 | ------------- | ------------- |
 | `ansible-playbook <YAML>` | Run on all hosts defined |
-| `ansible-playbook <YAML> -f 10` | Run 10 hosts parallel |
+| `ansible-playbook <YAML> -f 10` | Fork - Run 10 hosts parallel |
 | `ansible-playbook <YAML> --verbose` | Verbose on successful tasks |
 | `ansible-playbook <YAML> -C` | Test run |
 | `ansible-playbook <YAML> -C -D` | Dry run |
@@ -112,8 +112,6 @@ Role variable can define under **roles** directive
 | vars | role’s variable values |
 | pre_tasks | tasks before role |
 | post_tasks | tasks after role |
-| pre_tasks | tasks before role |
-| post_tasks | tasks after role |
 
 ## Ansible Galaxy
 https://galaxy.ansible.com
@@ -138,7 +136,7 @@ https://galaxy.ansible.com
 
 | Item  | Description |
 | ------------- | ------------- |
-| 'forks' | number of forks or parallel machines|
+| `forks` | number of forks or parallel machines|
 | `--forks` | when using ansible-playbook |
 | `serial` | control number parallel machines |
 | `async: 3600` | wait 3600 seconds to complete the task |
@@ -179,4 +177,4 @@ https://galaxy.ansible.com
 *if you find any mistakes, please feel free to update or let me know*
 
 Thanks
-http://bit.ly/gineesh  |  www.techbeats.guru
+LinkedIn](http://bit.ly/gineesh)  |  [techbeatly.com](www.techbeatly.com)
