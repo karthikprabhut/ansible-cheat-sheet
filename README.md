@@ -56,15 +56,15 @@ Ansible Cheat Sheet for Quick Reference and understanding
 | `ansible-playbook <YAML> --verbose` | Verbose on successful tasks |
 | `ansible-playbook <YAML> -C` | Test run |
 | `ansible-playbook <YAML> -C -D` | Dry run |
-| `ansible-playbook <YAML> -l <host>` | Run on single host |
+| `ansible-playbook <YAML> -l <host>` | Limit to run on single host |
 
 
 ## Handlers
 
 | Item  | Description |
 | ------------- | ------------- |
-| 'notify` | to notify the handler |
-| 'handlers` | define handler |
+| `notify` | to notify the handler |
+| `handlers` | define handler |
 
 
 ## Tags
