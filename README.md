@@ -3,7 +3,7 @@
 
 Ansible Cheat Sheet for Quick Reference and understanding
 
-[LinkedIn](http://bit.ly/gineesh)  |  [techbeatly.com](www.techbeatly.com)
+[LinkedIn](http://bit.ly/gineesh)  \|  [techbeatly.com](www.techbeatly.com)
 
 ## Variables
 
@@ -177,4 +177,5 @@ https://galaxy.ansible.com
 *if you find any mistakes, please feel free to update or let me know*
 
 Thanks
-LinkedIn](http://bit.ly/gineesh)  |  [techbeatly.com](www.techbeatly.com)
+
+[LinkedIn](http://bit.ly/gineesh)  \|  [techbeatly.com](www.techbeatly.com)
