@@ -46,6 +46,8 @@ Ansible Cheat Sheet for Quick Reference and understanding
 | `debug` | to debug and display |
 | `add_host` | add host to inventory while play |
 | `wait_for` | use for flow control  |
+| `apt`  | manage apt-packages |
+| `shell` | execute shell commands on targets |
 
 ## Playbooks
 
